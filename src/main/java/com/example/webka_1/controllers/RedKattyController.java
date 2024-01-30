@@ -26,4 +26,6 @@ public class RedKattyController {
         model.addAttribute("nameView", "Katy_vtoraya");
         return "view2.html";
     }
+
+
 }
