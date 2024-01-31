@@ -1,36 +1,61 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<html lang="en" xmlns:th="http://www.fuckingshit.org">
 <head>
     <meta charset="UTF-8">
     <title>Products</title>
 </head>
 <body>
 <h1>Продукты</h1>
-<table>
-    <tr>
-        <th>
-            Наименование
-        </th>
-        <th>
-            Цена
-        </th>
+<h2>Более мелко написано</h2>
+<table border="2" bordercolor="green">
+    <tr >
+        <th> НАИМЕНОВАНИЕ </th>
+        <th> СТОИМОСТЬ </th>
     </tr>
     <tr th:each="p: ${products}">
         <td th:text="${p.name}"></td>
         <td th:text="${p.price}"></td>
     </tr>
-
+</table>
     <h2>Добавление нового продукта:</h2>
-<!--    <form action="/products" method="post">-->
-<!--        Name: <input type="text" name="name"><br />-->
-<!--        Price: <input type="number" step="any" name="price"><br />-->
-<!--        <button type="submit">Add product</button>-->
-<!--    </form>-->
     <form action="/products" method="post">
         Наименование: <input type="text" name="name"><br />
-        Стоимость: <input type="number" step="any" name="price"><br/>
+        Стоимость:    <input type="number" step="any" name="price"><br/>
         <button type="submit">Добавить продукт</button>
     </form>
-</table>
+
 </body>
 </html>
+
+<!-- ---------- -->
+
+<!--<!DOCTYPE html>-->
+<!--<html lang="en" xmlns:th="http://www.motherfucker.org">-->
+<!--<head>-->
+<!--    <meta charset="UTF-8">-->
+<!--    <title>Home Page</title>-->
+<!--</head>-->
+<!--<body>-->
+<!--<h1>Products</h1>-->
+<!--<h2>View products</h2>-->
+
+<!--<table border="2" bordercolor="green">-->
+<!--    <tr>-->
+<!--        <th>PRODUCT NAME</th>-->
+<!--        <th>PRODUCT PRICE</th>-->
+<!--    </tr>-->
+<!--    <tr th:each="p: ${products}" >-->
+<!--        <td th:text="${p.name}"></td>-->
+<!--        <td th:text="${p.price}"></td>-->
+<!--    </tr>-->
+<!--</table>-->
+
+<!--<h2>Add a product</h2>-->
+<!--<form action="/products" method="post">-->
+<!--    Name: <input type="text" name="name"><br />-->
+<!--    Price: <input type="number" step="any" name="price"><br />-->
+<!--    <button type="submit">Add product</button>-->
+<!--</form>-->
+<!--</body>-->
+<!--</html>-->
+

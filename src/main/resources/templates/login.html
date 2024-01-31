@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Login_Vieushka</title>
+</head>
+<body>
+<form action="/" method="post">
+  Name:<input type="text" name="name"/><br />
+  Password:<input type="password" name="password" /><br />
+  <button type="submit">Vvesti</button>
+</form>
+<p th:text="${message}"></p>
+</body>
+</html>
+
+<!-- ---------------------------- -->
+<!--<form action="/" method="post">-->
+<!--    Username: <input type="text" name="username" /><br />-->
+<!--    Password: <input type="password" name="password" /><br />-->
+<!--    <button type="submit">Log in</button>-->
+<!--</form>-->
+
+<!--<p th:text="${message}"></p>-->
